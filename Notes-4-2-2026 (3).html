@@ -1,0 +1,283 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTips PH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5dc 0%, #e8f5e8 100%);
+            color: #2e4a3d;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, #4a7c59, #6b8e23, #8fbc8f);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #home {
+            background-image: url('https://via.placeholder.com/1200x600/8fbc8f/ffffff?text=Earth+Landscape'), linear-gradient(45deg, rgba(139,188,143,0.5), rgba(107,142,35,0.5));
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+        }
+        #home h1, #home p, #home img, #home button {
+            position: relative;
+            z-index: 1;
+        }
+        #home h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounceIn 1s ease;
+        }
+        #home p {
+            font-size: 1.5em;
+        }
+        button {
+            background-color: #8fbc8f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            background-color: #6b8e23;
+            transform: translateY(-5px);
+        }
+        #tips {
+            background-color: #e8f5e8;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tip-card {
+            background: white;
+            border: 1px solid #d4edda;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .tip-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .tip-card svg {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .tip-card h3 {
+            color: #4a7c59;
+            margin-bottom: 10px;
+        }
+        #impact {
+            background-color: #fffacd;
+        }
+        #about {
+            background-color: #f0f8ff;
+        }
+        #contact {
+            background-color: #e8f5e8;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            border-color: #4a7c59;
+            outline: none;
+        }
+        footer {
+            background-color: #4a7c59;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            #home h1 { font-size: 2em; }
+            nav a { display: block; margin: 10px 0; }
+            .tips-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoTips PH</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tips">Eco Tips</a>
+            <a href="#impact">Environmental Impact</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Small Actions Make a Big Difference</h1>
+        <p>Teach students easy ways to help the environment and raise awareness in a simple, informative way. Perfect for beginners in web design.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        <br>
+        <button onclick="document.getElementById('tips').scrollIntoView({behavior: 'smooth'});">View Eco Tips</button>
+    </section>
+
+    <section id="tips">
+        <h2>Eco Tips</h2>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a7c59"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <h3>Use Reusable Water Bottles</h3>
+                <p>Reduce plastic waste by carrying a reusable bottle instead of buying single-use plastics.</p>
+            </div>
+            <div class="tip-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a7c59"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                <h3>Turn Off Lights When Not in Use</h3>
+                <p>Save energy by switching off lights and unplugging devices when you're done.</p>
+            </div>
+            <div class="tip-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a7c59"><path d="M7 4V2C7 .9 7.9 0 9 0h6c1.1 0 2 .9 2 2v2h5v2H2V4h5zm1 2h8V2H8v4zm0 2v12h8V8H8zm2 10h4v-2h-4v2z"/></svg>
+                <h3>Bring Eco Bags</h3>
+                <p>Use reusable bags for shopping to cut down on plastic bag usage.</p>
+            </div>
+            <div class="tip-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a7c59"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <h3>Reduce Food Waste</h3>
+                <p>Plan meals and compost leftovers to minimize waste in landfills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact">
+        <h2>Environmental Impact in the Philippines</h2>
+        <p>The Philippines, an archipelago of over 7,000 islands, faces significant environmental challenges due to its biodiversity and vulnerability to climate change. Protecting the environment here is crucial as it supports livelihoods, tourism, and global climate stability. Key issues include deforestation, plastic pollution, and biodiversity loss, exacerbated by rapid urbanization and natural disasters.</p>
+        <ul>
+            <li><strong>Deforestation and Biodiversity Loss</strong>: The Philippines has lost about 50% of its original forest cover since the 1900s, leading to habitat destruction for species like the Philippine eagle. This contributes to soil erosion and reduced water quality. (Source: World Wildlife Fund (WWF), 2023; Philippine Department of Environment and Natural Resources (DENR), 2022).</li>
+            <li><strong>Plastic Pollution</strong>: As a coastal nation, the Philippines generates millions of tons of plastic waste annually, much of which ends up in oceans, harming marine life and fisheries. It's ranked among the top plastic polluters globally. (Source: United Nations Environment Programme (UNEP), 2021; Ocean Conservancy, 2022).</li>
+            <li><strong>Climate Change Vulnerability</strong>: With low-lying islands and reliance on agriculture, the Philippines is highly susceptible to rising sea levels, typhoons, and droughts. Sustainable practices can mitigate these impacts and preserve coral reefs, which are vital for tourism and food security. (Source: Intergovernmental Panel on Climate Change (IPCC), 2022; Philippine Climate Change Commission, 2023).</li>
+        </ul>
+        <p>Addressing these issues through education and action, like the tips on this site, can foster resilience and ensure a sustainable future for future generations. For more details, visit <a href="https://www.worldwildlife.org/places/philippines" target="_blank">WWF Philippines</a> or <a href="https://www.denr.gov.ph/" target="_blank">DENR</a>.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This website was created to teach students easy ways to help the environment, raising awareness in a simple, informative way. It's perfect for beginners in web design and focuses on the importance of helping the environment in the Philippines, where sustainable practices can make a real impact on local ecosystems and communities.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Or email us at: ecotips.ph@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 EcoTips PH. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html></pre>
+        </body>
+    </html>
